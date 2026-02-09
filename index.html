@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Family Weekly Plans (2026)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <h1>Family Weekly Plans</h1>
+          <p class="subhead">Feb 9, 2026 – Dec 31, 2026</p>
+        </div>
+        <div class="header-actions">
+          <button id="todayBtn" type="button">Jump to today</button>
+          <button id="clearBtn" type="button" title="Clear all activities">Clear activities</button>
+        </div>
+      </header>
+
+      <section class="controls">
+        <label class="search">
+          <span>Filter</span>
+          <input id="filterInput" type="text" placeholder="Type to filter activities or dates" />
+        </label>
+        <label class="toggle">
+          <input id="weekToggle" type="checkbox" checked />
+          <span>Show week separators</span>
+        </label>
+      </section>
+
+      <section class="table-wrap">
+        <table id="planTable" aria-label="Weekly plans">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>Activity (editable)</th>
+            </tr>
+          </thead>
+          <tbody id="planBody"></tbody>
+        </table>
+      </section>
+
+      <footer class="footer">
+        <div>Edits are saved automatically on this device.</div>
+        <div class="hint">Tip: click a cell in Activity and start typing.</div>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
